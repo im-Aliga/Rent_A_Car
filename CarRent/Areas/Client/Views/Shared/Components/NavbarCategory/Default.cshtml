@@ -1,0 +1,17 @@
+﻿@using CarRent.Areas.Client.ViewModels;
+@model List<CateCarViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="Our-cars row g-5">
+    @foreach(var category in Model)
+    {
+    <div class="col-lg-4 crs ">
+        <a asp-route="client-detail-list" asp-route-id="@category.Id">
+            <img src="~/@category.ImageUrl" alt="">
+            <p>@category.Name</p>
+        </a>
+    </div>
+        
+    }
+   
+</div>

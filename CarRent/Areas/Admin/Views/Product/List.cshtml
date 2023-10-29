@@ -1,0 +1,39 @@
+﻿@using CarRent.Areas.Admin.ViewModels.Product
+@model List<ProductListViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<a asp-route="admin-product-add" class="btn btn-primary mt-5 mb-5">Add New Car</a>
+
+<div class="display-flex">
+    <div class="row">
+        @foreach (var product in Model)
+        {
+
+            <div class="card" style="width: 18rem;">
+              
+                <div class="card-body">
+                    <td><img style="width:50%;height:50%; border-radius:0" src="~/@product.ImageUrl"></td>
+                    <h5 class="card-title">@product.Brand  @product.Brand</h5>
+                    <p class="card-text">@product.Year year <br> @product.FuelType fueltype</p>
+                    <p class="card-text"> @product.SeatCount seat count</p>
+                    <p class="card-text"> @product.GearBox Gear Box</p>
+                    <p class="card-text"> @product.WeeklyPrice azn/weekly</p>
+                    <p class="card-text"> @product.DailyPrice azn/daily </p>
+
+
+
+
+                </div>
+                <div>
+                    <a class="btn btn-warning mb-2" asp-route="admin-product-update" asp-route-id="@product.Id">Update</a>
+                    <form method="POST" asp-route="admin-product-delete" asp-route-id="@product.Id" id="blog-form-@product.Id"></form>
+                    <button style="width:100%;" class="btn btn-danger" type="submit" form="blog-form-@product.Id">
+                     Delete
+                    </button>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+

@@ -1,0 +1,29 @@
+﻿@using CarRent.Areas.Admin.ViewModels.Category;
+@model List<CategoryListViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<a asp-route="admin-cate-add" class="btn btn-primary mt-5 mb-5">Add New Category</a>
+
+<div class="display-flex">
+    <div class="row">
+        @foreach (var category in Model)
+        {
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <td><img style="width:50%;height:50%; border-radius:0" src="~/@category.ImageUrl"></td>
+                    <h5 class="card-title">@category.Name</h5> <br />
+                    
+                </div>
+                <div>
+                    <a class="btn btn-warning mb-2" asp-route="admin-cate-update" asp-route-id="@category.Id">Update</a>
+                    <form method="POST" asp-route="admin-cate-delete" asp-route-id="@category.Id" id="blog-form-@category.Id"></form>
+                    <button style="width:100%;" class="btn btn-danger" type="submit" form="blog-form-@category.Id">
+                        Delete
+                    </button>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+

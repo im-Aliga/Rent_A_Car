@@ -1,0 +1,16 @@
+﻿@using CarRent.Areas.Client.ViewModels
+@model SliderListViewMOdel
+
+<div class="col-lg-6">
+    <div class="box">
+        <h5 style="color: #0c9ae0; font-weight: bold;">@Model.SmallHeader</h5>
+        <h1 class="qodef-m-title">@Model.Header</h1>
+        <h6 style="font-weight: bold; color: #494d56; margin-bottom: 7%;">@Model.Tittle</h6>
+        <a asp-route="client-order-add"><span>Book Now</span></a>
+    </div>
+</div>
+<div class="col-lg-6">
+    <div class="box">
+        <img src="~/@Model.ImageUrl" alt="">
+    </div>
+</div>

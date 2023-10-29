@@ -1,0 +1,87 @@
+﻿@{
+    Layout = "";
+}
+
+@using CarRent.Areas.Client.ViewModels
+@model OrderCarListViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarrentBaku</title>
+    <link rel="icon" href="https://carrentbaku.az/storage/2022/11/cropped-icon-32x32.png">
+    <link rel="stylesheet" href="~/Client/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Client/assets/css/rent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Star Header -->
+    <header>
+
+        <div class="head container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="https://carrentbaku.az/storage/2022/11/rent-logo-01-1-2048x261-1.png" alt="">
+                </a>
+            </div>
+
+            <div class="back-index">
+                <a href="./index.html"><i class="fa-regular fa-circle-left"></i> Go to home</a>
+            </div>
+        </div>
+
+    </header>
+    <!-- End Header -->
+    <!-- Start Main -->
+    <main>
+        <section class="container first">
+            <h1 style="font-weight: bold;">Book <span style="color: #00a9ff;">Now</span></h1>
+            <p style="font-weight: bold;">Rental Cars From Just 50AZN/Day</p>
+        </section>
+        <hr style="width: 50%; margin-left: 25%;">
+        <section class="second container">
+            <div style="background-color: black; color: white;">1</div>
+            <div>2</div>
+            <div>3</div>
+        </section>
+        <section class="car-select">
+            <form method="POST" asp-route="client-order-add" enctype="multipart/form-data">
+            <h1> <span style="color: #00a9ff;">Select</span> Car</h1>
+       
+                  
+                  
+                    <select id="select-car" asp-for="CarIds" asp-items="@(new SelectList(Model.Cars,nameof(OrderCarViewModel.Id), nameof(OrderCarViewModel.Brand)))" class="form-select"> </select>
+
+
+            
+
+            
+                <section class="button">
+                   <button class="favorite styled" type="submit" class="btn btn-primary">Next</button>
+                </section>
+            </form>
+
+        </section>
+   
+    </main>
+    <!-- End Main -->
+    <!-- Start Footer -->
+    <footer>
+
+        <section class="call container">
+            <h6>Having Trouble?</h6>
+            <h3>Call: +994-50-477-7714</h3>
+        </section>
+
+        <section class="inf">
+            <a href="https://arcod.one"><span class="elementor-icon-list-text">2023 Crafted by<strong> ArcodTechnology </strong>.</span></a>
+        </section>
+    </footer>
+    <!-- End Footer -->
+
+
+</body>
+</html>

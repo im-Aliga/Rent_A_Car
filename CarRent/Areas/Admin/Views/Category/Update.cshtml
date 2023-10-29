@@ -1,0 +1,23 @@
+﻿@using CarRent.Areas.Admin.ViewModels.Category;
+
+@model CategoryAddViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+<form method="POST" asp-route="admin-cate-update" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Name</label>
+        <input class="form-control" id="exampleFormControlInput1" asp-for="@Model.Name">
+
+        <label for="exampleFormControlInput1">Order Number:</label>
+        <input class="form-control" id="exampleFormControlInput1" asp-for="@Model.OrderId">
+
+        <label for="exampleFormControlInput1">Image:</label>
+        <input class="form-control" id="exampleFormControlInput1" asp-for="Image">
+
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header .head {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .head .logo img {
+  width: 18%;
+}
+header .head .back-index {
+  width: 30%;
+}
+header .head .back-index a {
+  font-size: 20px;
+  transition: 0.3s;
+}
+header .head .back-index a:hover {
+  color: #0c9ae0;
+  transition: 0.3s;
+}
+
+main .first {
+  padding-top: 60px;
+}
+main .first h1 {
+  margin-left: 28rem;
+}
+main .first p {
+  margin-left: 26.3rem;
+}
+main .second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .second div {
+  font-size: 17px;
+  margin: 0 0 10px;
+  border-color: black;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  width: var(--e-form-steps-indicator-padding, 50px);
+  height: var(--e-form-steps-indicator-padding, 50px);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 0 140px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+main .car-select {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin-left: 22rem;
+}
+main .car-select label {
+  margin-bottom: 10px;
+  font-family: Sans-serif;
+  font-weight: bolder;
+  color: rgba(5, 10, 21, 0.6705882353);
+}
+main .car-select input {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  width: 200%;
+  border-radius: 20px;
+}
+main .button {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+main .button .pr {
+  color: #fff;
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 100px;
+  font-size: 1rem;
+  text-align: center;
+}
+main .button .pr:hover {
+  background-color: #0c9ae0;
+  color: black;
+}
+main .button .styled {
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 100px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: #234896;
+}
+main .button .styled:hover {
+  background-color: #0c9ae0;
+  color: black;
+}
+main .button .styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+footer .call {
+  width: 52%;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 15px 0;
+}
+footer .call h6, footer .call h2 {
+  font-weight: bold;
+}
+footer .call h6 {
+  margin-left: 15rem;
+  color: #0073ff;
+}
+footer .call h3 {
+  padding: 20px;
+  margin-left: 10rem;
+}
+footer .inf {
+  margin-left: 35rem;
+  margin-bottom: 40px;
+}
+footer .inf:hover a {
+  color: #234896;
+  transition: 0.5s;
+}/*# sourceMappingURL=rent2.css.map */

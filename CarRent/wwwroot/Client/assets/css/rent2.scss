@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+   .head{
+    padding-top: 20px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        img{
+            width: 18%;
+        }
+    }
+    .back-index{   
+        width: 30%;     
+        a{
+            font-size: 20px;
+            transition: .3s;
+            &:hover{
+                color: #0c9ae0;
+                transition: .3s;
+            }
+        }
+        
+     }
+   }
+
+    }
+    main{
+        .first{
+            padding-top: 60px;
+            h1{
+                margin-left: 28rem;
+            }
+            p{
+                margin-left: 26.3rem;
+            }
+        }
+        .second{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div{
+                font-size: 17px;
+                margin: 0 0 10px;
+                border-color: black;
+                border-radius: 50%;
+                border-width: 1px;
+                border-style: solid;
+                width: var(--e-form-steps-indicator-padding,50px);
+                height: var(--e-form-steps-indicator-padding,50px);
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                margin: 0 140px;
+                font-weight: bold;
+                margin-top: 50px;
+            }
+        }
+        .car-select{
+            margin-bottom: 50px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:40%;
+            margin-left: 22rem;
+            label{
+                margin-bottom: 10px;
+                font-family: Sans-serif;
+                font-weight: bolder;
+                color: #050A15AB;
+            }
+            input{
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 16px;
+                width: 200%;
+                border-radius: 20px;
+         
+           }
+         }
+       
+         .button{
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width:55%;
+            .pr{
+                color: #fff; 
+                background-color: black;
+                color: #fff;
+                font-weight: bold;
+                border: 0;
+                line-height: 2.5;
+                padding: 0 100px;
+                font-size: 1rem;
+                text-align: center;
+                &:hover {
+                    background-color: #0c9ae0;
+                    color: black;
+                  }
+            }
+            .styled {
+                color: #fff;
+                font-weight: bold;
+                border: 0;
+                line-height: 2.5;
+                padding: 0 100px;
+                font-size: 1rem;
+                text-align: center;
+                color: #fff;
+                background-color: #234896;
+                &:hover {
+                    background-color: #0c9ae0;
+                    color: black;
+                  }
+               
+              }
+              
+            
+              
+              .styled:active {
+                box-shadow:
+                  inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+                  inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+              }
+              
+           } 
+          
+          
+
+
+    }
+footer{
+    .call{
+        width: 52%;
+        box-shadow:
+              inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+              inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 15px 0;
+        h6,h2{
+            font-weight: bold;
+        }
+        h6{
+            margin-left: 15rem;
+            color: #0073ff;
+          
+        }
+        h3{
+            padding: 20px;
+            margin-left: 10rem;
+        }
+    }
+    .inf{
+        margin-left: 35rem;
+        margin-bottom: 40px;
+    }
+    .inf:hover{
+       a{
+        color: #234896;
+        transition: 0.5s;
+       }
+    }
+}

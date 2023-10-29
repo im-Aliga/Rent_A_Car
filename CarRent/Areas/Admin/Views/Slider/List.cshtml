@@ -1,0 +1,30 @@
+﻿@using CarRent.Areas.Admin.ViewModels.Slider;
+@model List<SliderListViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<a asp-route="admin-slider-add" class="btn btn-primary mt-5 mb-5">Add New Slider</a>
+
+<div class="display-flex">
+    <div class="row">
+        @foreach (var slider in Model)
+        {
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <td><img style="width:50%;height:50%; border-radius:0" src="~/@slider.ImageUrl"></td>
+                    <h5 class="card-title">@slider.SmallHeader</h5> <br />
+                    <h5 class="card-title">@slider.Header</h5> <br />
+                    <h5 class="card-title">@slider.Tittle</h5> <br />
+
+                </div>
+                <div>
+                    <a class="btn btn-warning mb-2" asp-route="admin-slider-update" asp-route-id="@slider.Id">Update</a>
+                    <form method="POST" asp-route="admin-slider-delete" asp-route-id="@slider.Id" id="blog-form-@slider.Id"></form>
+                    <button style="width:100%;" class="btn btn-danger" type="submit" form="blog-form-@slider.Id">
+                        Delete
+                    </button>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>

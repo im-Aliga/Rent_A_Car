@@ -1,0 +1,14 @@
+﻿@using CarRent.Areas.Admin.ViewModels.About;
+@model AboutViewModel
+
+
+<div class="about-us ">
+    <nav class="info" data-aos="fade-right" data-aos-duration="500">
+        <h5>@Model.SmallHeader</h5>
+        <h1>@Model.Header</h1>
+        <p>@Model.Tittle</p>
+    </nav>
+    <nav class="car" data-aos="fade-left" data-aos-duration="500">
+        <img style="padding-top: 130px;" src="~/@Model.ImageUrl" alt="">
+    </nav>
+</div> 

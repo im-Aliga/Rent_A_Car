@@ -1,0 +1,102 @@
+﻿@{
+    Layout = "";
+}
+
+@using CarRent.Areas.Client.ViewModels
+@model OrderDateViewModel
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarrentBaku</title>
+    <link rel="icon" href="https://carrentbaku.az/storage/2022/11/cropped-icon-32x32.png">
+    <link rel="stylesheet" href="~/Client/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Client/assets/css/rent2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Star Header -->
+    <header>
+
+        <div class="head container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="https://carrentbaku.az/storage/2022/11/rent-logo-01-1-2048x261-1.png" alt="">
+                </a>
+            </div>
+
+            <div class="back-index">
+                <a href="./index.html"><i class="fa-regular fa-circle-left"></i> Go to home</a>
+            </div>
+        </div>
+
+    </header>
+    <!-- End Header -->
+    <!-- Start Main -->
+    <main>
+        <section class="container first">
+            <h1 style="font-weight: bold;">Book <span style="color: #00a9ff;">Now</span></h1>
+            <p style="font-weight: bold;">Rental Cars From Just 50AZN/Day</p>
+        </section>
+        <hr style="width: 50%; margin-left: 25%;">
+        <section class="second container">
+            <div style="background-color:#234896 ; color:white">1</div>
+            <div style="background-color:black ; color:white">2</div>
+            <div>3</div>
+        </section>
+            <form method="POST" asp-route="client-order-getdateasync" enctype="multipart/form-data">
+        <section class="car-select container">
+
+            <div class="formkit-outer" data-family="text" data-type="name" data-invalid="true">
+                <div class="formkit-wrapper container">
+                    <label class="formkit-label" for="input_0">Pick Up Date</label>
+                    <div class="formkit-inner">
+                            <input class="form-control" asp-for="@Model.Pickup">
+
+                        @*<input class="formkit-input" type="date" name="date_1" id="input_0" aria-describedby="help-input_0 input_0-rule_date_before">*@
+                    </div>
+                </div>
+            </div>
+            <div class="formkit-outer" data-family="text" data-type="name" data-invalid="true">
+                <div class="formkit-wrapper container">
+                    <label class="formkit-label" for="input_0">Drop off Date</label>
+                    <div class="formkit-inner">
+                            <input class="form-control" asp-for="@Model.Drop">
+
+                    </div>
+
+                        <input class="form-control" type="hidden" id="exampleFormControlInput1" asp-for="@Model.OrderId">
+
+                </div>
+            </div>
+        </section>
+        <section class="button container">
+            <a href="./rent.html"><button class="pr" type="button">PREVIOUS</button></a>
+
+           <button class="favorite styled" type="submit">NEXT</button>
+        </section>
+            </form>
+    </main>
+    <!-- End Main -->
+    <!-- Start Footer -->
+    <footer>
+
+        <section class="call container">
+            <h6>Having Trouble?</h6>
+            <h3>Call: +994-50-477-7714</h3>
+        </section>
+
+        <section class="inf">
+            <a href="https://arcod.one"><span class="elementor-icon-list-text">2023 Crafted by<strong> ArcodTechnology </strong>.</span></a>
+        </section>
+    </footer>
+    <!-- End Footer -->
+
+
+</body>
+</html>

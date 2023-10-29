@@ -1,0 +1,34 @@
+﻿@using CarRent.Areas.Admin.ViewModels.Brand;
+@model List<BrandListViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<a asp-route="admin-brand-add" class="btn btn-primary mt-5 mb-5">Yeni Brend Əlavə et</a>
+
+<div class="display-flex">
+    <div class="row">
+        @foreach (var brand in Model)
+        {
+
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <td><img style="width:50%;height:50%; border-radius:0" src="~/@brand.ImageUrl"></td>
+                    <p class="card-text"> @brand.Name </p>
+                  
+
+
+
+
+                </div>
+                <div>
+                    <a class="btn btn-warning mb-2" asp-route="admin-brand-update" asp-route-id="@brand.Id">Update</a>
+                    <form method="POST" asp-route="admin-brand-delete" asp-route-id="@brand.Id" id="blog-form-@brand.Id"></form>
+                    <button style="width:100%;" class="btn btn-danger" type="submit" form="blog-form-@brand.Id">
+                        Delete
+                    </button>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>

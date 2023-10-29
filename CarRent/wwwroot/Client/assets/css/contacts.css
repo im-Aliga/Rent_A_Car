@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header a {
+  color: #fff;
+}
+header .up {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #0c9ae0;
+  width: 100%;
+  padding: 12px 0px;
+}
+header .up .first {
+  margin-left: 100px;
+}
+header .up .second {
+  margin-right: 100px;
+}
+header .up li {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  list-style-type: none;
+  border-radius: 4px;
+}
+header .down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3%;
+}
+header .down img {
+  width: 200px;
+}
+header .down .cars a {
+  font-size: 22px;
+  color: #000;
+  margin: 0 30px;
+  font-weight: bold;
+}
+header .down .cars li {
+  float: left;
+  list-style-type: none;
+}
+header .down .cars i {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 40px;
+}
+main .adress-info {
+  padding: 120px 0;
+  background-color: #494d56;
+}
+main .all-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+main .all-info .box {
+  padding: 40px 25px 50px 25px;
+  border-style: solid;
+  border-width: 6px 6px 6px 6px;
+  border-color: black;
+  margin: 0 50px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+main .all-info .box span {
+  font-weight: bold;
+}
+main .all-info .box h4 {
+  color: #234896;
+  font-weight: bold;
+  margin: 20px 0;
+}
+main .all-info .box i {
+  margin-left: 70px;
+  color: #0c9ae0;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+main .map {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+main .map div {
+  margin: 0 30px;
+}
+main .sign .signup {
+  padding: 30px 30px;
+  margin-left: 25rem;
+  margin-bottom: 10rem;
+}
+main .sign .signup input {
+  margin: 30px;
+  padding: 8px 16px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+main .sign .signup button {
+  margin-left: 30px;
+  padding: 14px 225px;
+  border-radius: 30px;
+  background-color: #234896;
+}
+main .sign .signup button span {
+  color: #000;
+  font-weight: bold;
+}
+main .sign .signup button:hover {
+  background-color: #0c9ae0;
+  transition: 1s;
+}
+main .sign .signup button:hover span {
+  color: #fff;
+  transition: 1s;
+}
+
+footer .first {
+  background-color: #234896;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+footer .first .box {
+  padding: 0 30px;
+  margin: 0 55px;
+}
+footer .first .box h3 {
+  color: #fff;
+  margin: 25px 0;
+  font-weight: bold;
+}
+footer .first .box p {
+  color: #fff;
+  font-weight: bold;
+}
+footer .first .box i {
+  color: #fff;
+  font-size: 60px;
+}
+footer .second {
+  background-color: #234896;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-color: gray;
+  border: 1px solid gray;
+}
+footer .second .logo {
+  margin-left: 140px;
+  padding: 10px 0;
+}
+footer .second .logo i {
+  margin: 0 20px;
+  font-size: 24px;
+  color: #fff;
+}
+footer .second .icon img {
+  width: 200px;
+  margin: 0 20px;
+}
+footer .second .data {
+  margin: 0 20px;
+}/*# sourceMappingURL=contacts.css.map */

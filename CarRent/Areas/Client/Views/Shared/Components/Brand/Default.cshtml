@@ -1,0 +1,15 @@
+﻿@using CarRent.Areas.Client.ViewModels;
+@model List<BrandViewModel>
+
+
+<div class="car-logoes container"
+     data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"
+     data-aos-duration="500">
+     @foreach(var brand in Model)
+    {
+    <div class="a1"><img src="~/@brand.ImageUrl" alt=""></div>
+        
+    }
+   
+</div>

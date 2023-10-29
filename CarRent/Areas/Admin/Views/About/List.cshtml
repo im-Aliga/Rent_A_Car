@@ -1,0 +1,30 @@
+﻿@using CarRent.Areas.Admin.ViewModels.About;
+@model List<AboutViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<a asp-route="admin-about-add" class="btn btn-primary mt-5 mb-5">Add New About</a>
+
+<div class="display-flex">
+    <div class="row">
+        @foreach (var about in Model)
+        {
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <td><img style="width:50%;height:50%; border-radius:0" src="~/@about.ImageUrl"></td>
+                    <h5 class="card-title">@about.SmallHeader</h5> <br />
+                    <h5 class="card-title">@about.Header</h5> <br />
+                    <h5 class="card-title">@about.Tittle</h5> <br />
+
+                </div>
+                <div>
+                    <a class="btn btn-warning mb-2" asp-route="admin-about-update" asp-route-id="@about.Id">Update</a>
+                    <form method="POST" asp-route="admin-about-delete" asp-route-id="@about.Id" id="blog-form-@about.Id"></form>
+                    <button style="width:100%;" class="btn btn-danger" type="submit" form="blog-form-@about.Id">
+                        Delete
+                    </button>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>

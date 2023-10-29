@@ -1,0 +1,30 @@
+﻿@using CarRent.Areas.Admin.ViewModels.Order
+@model List<OrderViewModel>
+<div class="container">
+
+    <div class="row">
+
+    @foreach (var item in Model)
+    {
+    <div class="card col-lg-5" style="width: 26rem;">
+      
+        <div class="card-body">
+            <p class="card-text"> Name & Surname : @item.Name @item.Surname <br>
+                Email & Phone Number : @item.Email @item.PhoneNumber <br>
+                Brand & Model & Year : @item.Brand @item.Model @item.Year <br>
+                Pickup Date : @item.PickupDate <br>
+                DropOff Date : @item.DropDate<br>
+                <br>
+                Send date : @item.CreatedAt.ToString("dd/mm/yyyy")
+
+                
+
+                
+
+            </p>
+        </div>
+    </div>
+    }
+    </div>
+</div>
+

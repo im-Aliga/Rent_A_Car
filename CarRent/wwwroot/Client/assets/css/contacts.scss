@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    a{
+        color: #fff;
+    }
+    .up{
+        display:flex;
+        justify-content: space-between;
+        text-align: center;
+        background-color: #0c9ae0;
+        width: 100%;
+        padding: 12px 0px;
+       .first{
+        margin-left: 100px;
+       }
+       .second{
+        margin-right: 100px;
+       }
+        li{
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px; 
+        line-height: 25px;
+        list-style-type: none;;
+        border-radius: 4px;
+       }
+    }
+    .down{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3%;
+       img{
+        width: 200px;
+       
+       }
+       .cars{
+       a{
+        font-size: 22px;
+        color: #000;
+        margin: 0 30px;
+        font-weight: bold;
+       }
+       li{
+        float:left;
+        list-style-type: none;;
+       }
+       i{
+        font-weight: bold;
+       }
+       }
+    }
+}
+a{
+    text-decoration: none;
+}
+
+main{
+    padding-top: 40px;
+    .adress-info{
+        padding: 120px 0;
+        background-color: #494d56;
+    }
+
+    .all-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+        .box{
+            padding: 40px 25px 50px 25px;
+            border-style: solid;
+            border-width: 6px 6px 6px 6px;
+            border-color: black;
+            margin: 0 50px;
+            border-radius: 30px;
+            margin-bottom: 50px;
+           
+            span{
+                font-weight: bold;
+            }
+            h4{
+                color: #234896;
+                font-weight: bold;
+                margin: 20px 0;
+            }
+            
+            i{
+               margin-left: 70px;
+                color: #0c9ae0;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .map{
+       display: flex;
+       justify-content: space-between;
+       align-items: center; 
+      div{
+        margin: 0 30px;
+      }
+      padding-bottom: 100px;
+    }
+    .sign{
+        .signup{
+            padding: 30px 30px;
+            margin-left: 25rem;
+            margin-bottom: 10rem;
+            input{
+                margin: 30px;
+                padding: 8px 16px;
+                background-color: #fff;
+                border-radius: 30px;
+            }
+            button{
+                margin-left: 30px; 
+                padding: 14px 225px;
+                 border-radius: 30px;
+                 background-color: #234896; 
+                 span{
+                    color: #000;
+                    font-weight: bold;
+                 }
+            }
+            button:hover{
+                background-color: #0c9ae0;
+                transition: 1s;
+                span{
+                    color: #fff;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+footer{
+    .first{
+       background-color: #234896;
+       display: flex;
+       justify-content: space-between;
+       padding-top: 30px;
+       
+      .box{
+       padding: 0 30px;
+       margin: 0 55px;
+       h3{
+           color: #fff;
+           margin: 25px 0;
+           font-weight: bold;
+           
+       }
+       p{
+           color: #fff;
+           font-weight: bold;
+       }
+       i{
+           color: #fff;
+           font-size: 60px;
+           
+         }
+      }
+     
+    }
+    .second{ 
+       background-color: #234896;
+       display: flex;
+       justify-content: space-between;
+       padding: 30px 0;
+       border-color: gray;
+       border: 1px solid gray;
+       .logo{
+           margin-left: 140px;
+       i{
+          
+           margin: 0 20px;
+           font-size: 24px;
+           color: #fff;
+       }
+       padding: 10px 0;
+      
+      }
+      .icon{
+      img{
+       width: 200px;
+       margin: 0 20px;
+      }
+      }
+      .data{
+       margin:0 20px;
+      }
+   }
+     
+           
+           
+       
+   }

@@ -1,0 +1,25 @@
+﻿@using CarRent.Areas.Admin.ViewModels.Slider;
+@model SliderAddViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+<form method="POST" asp-route="admin-slider-update" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Small Header</label>
+        <input class="form-control" id="exampleFormControlInput1" asp-for="@Model.SmallHeader">
+
+        <label for="exampleFormControlInput1">Header:</label>
+        <input class="form-control" id="exampleFormControlInput1" asp-for="@Model.Header">
+
+        <label for="exampleFormControlInput1">tittle:</label>
+        <input class="form-control" id="exampleFormControlInput1" asp-for="@Model.Tittle">
+
+        <label for="exampleFormControlInput1">Image:</label>
+        <input class="form-control" asp-for="Image">
+
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

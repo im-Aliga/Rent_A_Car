@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header .head {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .head .logo img {
+  width: 18%;
+}
+header .head .back-index {
+  width: 30%;
+}
+header .head .back-index a {
+  font-size: 20px;
+  transition: 0.3s;
+}
+header .head .back-index a:hover {
+  color: #0c9ae0;
+  transition: 0.3s;
+}
+
+main .first {
+  padding-top: 60px;
+}
+main .first h1 {
+  margin-left: 28rem;
+}
+main .first p {
+  margin-left: 26.3rem;
+}
+main .second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .second div {
+  font-size: 17px;
+  margin: 0 0 10px;
+  border-color: black;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  width: var(--e-form-steps-indicator-padding, 50px);
+  height: var(--e-form-steps-indicator-padding, 50px);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 0 140px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+main .car-select {
+  padding-top: 50px;
+}
+main .car-select h1 {
+  margin-left: 37rem;
+  font-weight: bold;
+}
+main .car-select select {
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  margin-left: 36.6rem;
+  border-radius: 20px;
+}
+main .button {
+  margin-left: 19rem;
+  padding: 40px;
+}
+main .button .styled {
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 330px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: #234896;
+}
+main .button .styled:hover {
+  background-color: #0c9ae0;
+  color: black;
+}
+main .button .styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+footer .call {
+  width: 52%;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 15px 0;
+}
+footer .call h6, footer .call h2 {
+  font-weight: bold;
+}
+footer .call h6 {
+  margin-left: 15rem;
+  color: #0073ff;
+}
+footer .call h3 {
+  padding: 20px;
+  margin-left: 10rem;
+}
+footer .inf {
+  margin-left: 35rem;
+  margin-bottom: 40px;
+}
+footer .inf:hover a {
+  color: #234896;
+  transition: 0.5s;
+}/*# sourceMappingURL=rent.css.map */

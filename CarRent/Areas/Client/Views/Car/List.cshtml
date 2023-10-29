@@ -1,0 +1,57 @@
+﻿@using CarRent.Areas.Client.ViewModels
+@model List<CarCateViewModel>
+
+@foreach (var car in Model)
+{
+
+    <div id="1" class="container tab-menu" data-aos="fade-up" data-aos-duration="500">
+
+        <div class="row" style=" background-color: #f7faff;">
+
+
+            <div class="col-lg-3 ">
+                <div class="box">
+                    <img src="~/@car.ImageUrl" alt="">
+                    <div class="type">
+                        <div class="name">
+                            <span> @car.Brand</span>
+                            <p> @car.Model</p>
+                        </div>
+                        <div class="price">
+                            <p>@car.DailyPrice AZN/day</p>
+                            <p>@car.WeeklyPrice AZN/week</p>
+                        </div>
+
+                    </div>
+                    <div class="speciality row container">
+
+                        <div class="col-lg-6 auto">
+                            <i aria-hidden="true" class="far fa-calendar-alt"></i>
+                            <p>@car.Year</p>
+                        </div>
+                        <div class="col-lg-6 auto">
+                            <i aria-hidden="true" class="fas fa-door-open"></i>
+                            <p> @car.FuelType</p>
+                        </div>
+                        <div class="col-lg-6 auto">
+                            <i aria-hidden="true" class="fas fa-users"></i>
+                            <p>@car.SeatCount</p>
+                        </div>
+                        <div class="col-lg-6 auto">
+                            <i aria-hidden="true" class="fas fa-car"></i>
+                            <p>@car.GearBox</p>
+                        </div>
+                    </div>
+
+                    <div class="button container">
+                        <a asp-route="client-order-add" class="elementor-button-link elementor-button elementor-size-sm " role="button"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-text">Rent Now</span> </span> </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+}
